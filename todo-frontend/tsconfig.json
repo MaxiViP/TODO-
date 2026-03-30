@@ -1,0 +1,14 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./app/*"],
+      "@/*": ["./app/*"],
+      "#app": [".nuxt/imports"],
+      "#imports": [".nuxt/imports"]
+    },
+    "types": ["@types/node", "@nuxt/schema"]
+  },
+  "include": ["types/**/*.d.ts", "app/**/*", ".nuxt", "nuxt.config.ts"]
+}
